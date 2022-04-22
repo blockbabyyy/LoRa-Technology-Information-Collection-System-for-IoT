@@ -1,10 +1,10 @@
-# LoRa_Transmitter_STM32]
-##Аппаратная часть:
+# LoRa_Transmitter_STM32
+## Аппаратная часть:
   - Микроконтрллер: STM32 Nucleo-F446RE
   - Датчик окружающей среды: SHT31
   - Питание: XIAOMI Mi Powerbank 10000 mAh
-##Программная часть:
-  ###Библиотеки:
+## Программная часть:
+  ### Библиотеки:
     - Adafruit_SHT31.h
     - SPI.h
     - RH_RF95.h
