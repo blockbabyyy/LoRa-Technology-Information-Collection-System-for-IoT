@@ -61,9 +61,8 @@ void setup()
   if (!status) {
       Serial.println("SHT31 not detected. Check wire!");
   } else {
-      Serial.print("Starting SHT31... result of .begin(): 0x");
-      Serial.println(status, HEX);
-  }
+      Serial.println("Starting SHT31...");
+       }
 }
 //------------------------------------------------------------------------------
 void loop()
@@ -82,14 +81,11 @@ void loop()
 //----------------DataPack-------------------
   LoRaPack.temperature = temperature;
   LoRaPack.humidity = humidity;
- 
-  Serial.println("Sending "); 
-    Serial.print((uint8_t) temperature, HEX);
-  
+   
   Serial.println("Sending..."); delay(10);
   LoRa.send((uint8_t *)&LoRaPack, sizeof(LoRaPack));
 
-  Serial.println("Waiting for packet to complete..."); delay(10);
+  Serial.println("Waiting for sending complete..."); delay(10);
   LoRa.waitPacketSent();
 
  
