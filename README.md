@@ -3,6 +3,9 @@
 - LoRa_Sensor_Unit.ino - код программы сенсорного узла
 - LoRa_Gateway.ino - код программы приемного шлюза
 
+ДЕМОНСТРАЦИЯ ПРОКЕТА: https://youtu.be/xiB7jbwgHNI
+ССЫЛКА НА СХОДНИК ВИДЕО: https://disk.yandex.ru/i/myJq9jM-QWkTTA
+
 ## Аппаратная часть:
   - Микроконтрллер: STM32 NUCLEO-F446RE
   - Датчик состояния окружающей среды: SHT31
