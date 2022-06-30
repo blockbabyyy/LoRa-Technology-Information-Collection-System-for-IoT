@@ -30,4 +30,37 @@
  Проект выполнен в качестве ВКР для Национального Исследовательского Университета "МЭИ", а так же в рамках выпускной работы IT-Academy Samsung. Научный руководитель: к.т.н., доцент кафедры Основ радиотехники (ОРТ) ИРЭ им. В.А. Котельникова НИУ "МЭИ", член IEEE, Стрелков Н.О.
  **********
  Разрбаотка осуществлялась с упором на работу "Application of Wi-Fi and LoRa Technologies for Wireless Measurement of Physical Quantities" за авторством Стрелкова Н.О. и Михайлова М.С.
+***********************
+# About project
+Development of sensor unit based on STM32 microcontroller for collection and transmission data to Cloud services.
+- LoRa_Sensor_Unit.ino - sensor unit code
+- LoRa_Gateway.ino - LoRa/4G/Wi-Fi Gateway code
+
+Demonstation on YouTube: https://youtu.be/xiB7jbwgHNI
+Demonstration on Cloud Storage: https://disk.yandex.ru/i/myJq9jM-QWkTTA
+
+## Hardware:
+  - MCU board: STM32 NUCLEO-F446RE
+  - Ambient sensor: SHT31
+  - Standalone power: Battery Shield 3200 mAh
+  - GPS: U-blox NEO-6M
+  - LoRa : Ai-Thinker RA-02 433 MHz
+## Software:
+  ### Librаries:
+    - Adafruit_SHT31.h
+    - SPI.h
+    - RH_RF95.h
+    - Wire.h
+    - stdint.h
+    - TinyGPS++
+ Develop by ArduinoIDE framework with STM32duino project. 
+ 
+ ## LoRa/4G/Wi-Fi Gateway
+Dragino LG-01 acts as a receiving gateway. Interaction with the Internet is carried out either via 4G or Ethernet cable. The code of the program is specified in the file LoRa_Gateway_LG-01.ino.
+ ## Cloud Platform
+ ThingsBoard.ip acts as a cloud paltform. Connection used MQTT protocol.
+ 
+ The project was performed as a final qualification work for the National Research University "MPEI" within the framework of IT-Academy Samsung project. Supervisor: Candidate of Technical Sciences, Associate Professor of the Department of Basic Radio Engineering (ВRE) of Kotelnikov Institute of Radio Engineering of National Research University "MPEI", IEEE member, N.O. Strelkov.
+ **********
+The development was inspired by the work "Application of Wi-Fi and LoRa Technologies for Wireless Measurement of Physical Quantities" by N.O. Strelkov and M.S. Mikhailov.
 
